@@ -1,6 +1,5 @@
 import React from 'react';
 import Questions from './Questions';
-import { faD } from '@fortawesome/free-solid-svg-icons';
 
 const faqQuestions = [
   {
