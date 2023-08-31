@@ -26,7 +26,7 @@ const faqQuestions = [
 
 const FrequentlyQuestions = () => {
   return (
-    <section className='mt-28 relative top-28 lg:h-[calc(100vh-7rem)] px-8 sm:px-6 lg:px-8 lg:mt-0'>
+    <section className='mt-28 relative top-28 lg:h-[calc(100vh-7rem)] sm:px-6 lg:px-8 lg:mt-0'>
       <div className='grid grid-cols-1 mx-auto max-w-12xl place-items-center place-content-center lg:h-full gap-10'>
         <article className='max-w-2xl mx-auto'>
           <h1 className='text-center text-5xl mb-4 font-semibold text-gray-800'>Frequently Asked Questions</h1>

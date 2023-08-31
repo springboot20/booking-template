@@ -4,7 +4,7 @@ import { HeroIllustration } from '../image-exports/Images';
 
 const Hero = () => {
   return (
-    <section className='relative top-28 px-8 sm:px-6 lg:px-8 mt-20 lg:mt-0 lg:h-[calc(100vh-7rem)]'>
+    <section className='relative top-28 sm:px-6 lg:px-8 mt-20 lg:mt-0 lg:h-[calc(100vh-7rem)]'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-14 max-w-12xl mx-auto items-center place-content-center lg:h-full'>
         <article className='order-2 lg:order-1'>
           <h1 className='text-6xl font-bold leading-snug text-center lg:text-left lg:text-7xl'>
