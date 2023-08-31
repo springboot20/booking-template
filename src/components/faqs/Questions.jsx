@@ -4,7 +4,7 @@ const Questions = ({ question }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='faq-card px-4 py-9'>
+    <div className='faq-card px-4 py-9 w-full'>
       <header className='flex justify-between items-center'>
         <h3 className='text-3xl font-medium'>{question.title}</h3>
         <svg
