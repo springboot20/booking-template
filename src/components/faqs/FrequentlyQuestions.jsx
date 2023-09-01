@@ -34,7 +34,7 @@ const FrequentlyQuestions = () => {
             Here are some of our FAQs. If you have any other questions you’d like answer please feel free to email us.
           </p>
         </article>
-        <article className='flex flex-col gap-6 w-full mx-auto max-w-5xl'>
+        <article className='grid grid-cols-1 gap-6 w-full max-w-7xl px-5'>
           {faqQuestions.map((faq) => (
             <Questions key={faq.title} question={faq} />
           ))}

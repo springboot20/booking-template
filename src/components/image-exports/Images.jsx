@@ -6,6 +6,8 @@ import ChromeIcon from '../../images/logo-chrome.svg';
 import FirefoxIcon from '../../images/logo-firefox.svg';
 import OperaIcon from '../../images/logo-opera.svg';
 import BgDot from '../../images/bg-dots.svg';
+import FaceBookIcon from '../../images/icon-facebook.svg';
+import TwitterIcon from '../../images/icon-twitter.svg';
 
 export {
   HeroIllustration,
@@ -16,4 +18,6 @@ export {
   FirefoxIcon,
   OperaIcon,
   BgDot,
+  FaceBookIcon,
+  TwitterIcon,
 };

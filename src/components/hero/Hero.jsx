@@ -14,11 +14,11 @@ const Hero = () => {
             A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites
             load instantly. Try it for free.
           </p>
-          <div className='sm:space-x-5 text-center lg:text-left'>
-            <Button className='lg:inline-block px-8 py-4 rounded-md shadow-md bg-soft-blue hover:bg-transparent hover:border-2 hover:border-soft-blue hover:text-soft-blue transition-all ease text-white text-lg font-bold'>
+          <div className='space-x-2 sm:space-x-5 text-center lg:text-left'>
+            <Button className='lg:inline-block px-8 py-5 rounded-md shadow-md bg-soft-blue hover:bg-transparent hover:border-2 hover:border-soft-blue hover:text-soft-blue transition-all ease text-white text-lg font-bold'>
               Get it on Chrome
             </Button>
-            <Button className='lg:inline-block px-8 py-4 rounded-md bg-grayish-blue text-lg font-bold hover:bg-transparent hover:border-2 hover:border-grayish-blue shadow-md transition-all ease'>
+            <Button className='lg:inline-block px-8 py-5 rounded-md bg-grayish-blue text-lg font-bold hover:bg-transparent hover:border-2 hover:border-grayish-blue shadow-md transition-all ease'>
               Get it on Firefox
             </Button>
           </div>
