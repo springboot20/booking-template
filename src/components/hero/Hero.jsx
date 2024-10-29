@@ -4,7 +4,7 @@ import { HeroIllustration } from "../image-exports/Images";
 
 const Hero = () => {
   return (
-    <section className="relative py-28 xl:pb-0">
+    <section className="relative py-28 xl:pb-0" id="hero">
       <div className="max-w-7xl mx-auto grid grid-cols-1 px-4 xl:px-0 lg:grid-cols-2 gap-8 items-center place-content-center lg:h-[calc(100vh-7rem)]">
         <article className="order-2 lg:order-1">
           <h1 className="text-3xl sm:text-5xl font-bold text-very-dark-blue text-center lg:text-left">

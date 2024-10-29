@@ -25,7 +25,7 @@ const Extensions = () => {
   ];
 
   return (
-    <section className="relative py-6 xl:h-screen">
+    <section className="relative py-6 xl:h-screen xl:py-0" id="pricing">
       <div className="grid grid-cols-1 mx-auto max-w-7xl place-items-center place-content-center lg:h-full px-4 xl:px-0">
         <article className="max-w-2xl mx-auto">
           <h1 className="text-center text-3xl sm:text-5xl mb-4 font-semibold text-very-dark-blue">

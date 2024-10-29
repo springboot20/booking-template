@@ -81,7 +81,7 @@ const Features = () => {
   const [view, setView] = useState("simple-bookmark");
 
   return (
-    <section className="relative xl:h-screen py-6">
+    <section className="relative xl:h-screen py-6" id="features">
       <div className="grid grid-cols-1 mx-auto max-w-7xl place-items-center place-content-center xl:h-full gap-10 px-4 xl:px-0">
         <article className="max-w-2xl mx-auto">
           <h1 className="text-center text-3xl sm:text-5xl mb-4 font-semibold text-very-dark-blue">
