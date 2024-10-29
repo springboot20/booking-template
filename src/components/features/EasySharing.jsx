@@ -6,14 +6,14 @@ import PropTypes from "prop-types";
 const EasySharing = ({ className }) => {
   return (
     <div className={className}>
-      <article className="h-full w-full">
+      <article className="h-full w-full flex items-center justify-center lg:items-start lg:justify-start">
         <img src={TabThreeIllustration} alt="" className="h-full w-full" />
       </article>
-      <article className="max-w-3xl space-y-6">
-        <h1 className="text-4xl font-bold text-gray-800 text-center lg:text-left">
+      <article className="max-w-3xl space-y-3 sm:space-y-6">
+        <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 text-center lg:text-left">
           Share your bookmarks
         </h1>
-        <p className="text-lg text-grayish font-semibold text-gray-500 md:text-center lg:text-left">
+        <p className="text-base sm:text-lg text-grayish font-normal text-gray-500 text-center lg:text-left">
           Easily share your bookmarks and collections with others. Create a shareable link that you
           can send at the click of a button.
         </p>

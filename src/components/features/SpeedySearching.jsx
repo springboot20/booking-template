@@ -6,14 +6,14 @@ import PropTypes from "prop-types";
 const SpeedySearching = ({ className }) => {
   return (
     <div className={className}>
-      <article className="h-full w-full">
+      <article className="h-full w-full flex items-center justify-center lg:items-start lg:justify-start">
         <img src={TabTwoIllustration} alt="" className="h-full w-full" />
       </article>
-      <article className="max-w-3xl space-y-6">
-        <h1 className="text-4xl font-bold text-gray-800 text-center lg:text-left">
+      <article className="max-w-3xl space-y-3 sm:space-y-6">
+        <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 text-center lg:text-left">
           Intelligent search
         </h1>
-        <p className="text-lg text-grayish font-semibold text-gray-500 text-center lg:text-left">
+        <p className="text-base sm:text-lg text-grayish font-normal text-gray-500 text-center lg:text-left">
           Our powerful search feature will help you find saved sites in no time at all. No need to
           trawl through all of your bookmarks.
         </p>
