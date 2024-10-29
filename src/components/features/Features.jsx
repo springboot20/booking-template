@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tab } from "@headlessui/react";
 import Button from "../buttons/Button";
 import SimpleBookmarking from "./SimpleBookmarking";
@@ -7,14 +7,13 @@ import SpeedySearching from "./SpeedySearching";
 
 const clx = (...classnames) => classnames.filter(Boolean).join(" ");
 
-const Tabs = ({ setView }) => {
+const Tabs = () => {
   return (
     <Tab.Group>
       <Tab.List className={"gap-5 sm:gap-10 flex flex-col sm:flex-row justify-center items-center"}>
         <Tab as={React.Fragment}>
           {({ selected }) => (
             <Button
-              onClick={() => setView("simple-bookmark")}
               className={clx(
                 selected && "text-gray-600 border-b-4 border-soft-red",
                 "focus:outline-none text-base sm:text-xl text-gray-800 font-satoshi font-medium py-1.5",
@@ -28,7 +27,6 @@ const Tabs = ({ setView }) => {
         <Tab as={React.Fragment}>
           {({ selected }) => (
             <Button
-              onClick={() => setView("speedy-searching")}
               className={clx(
                 selected && "text-gray-600 border-b-4 border-soft-red",
                 "focus:outline-none text-base sm:text-xl text-gray-800 font-satoshi font-medium py-1.5",
@@ -42,7 +40,6 @@ const Tabs = ({ setView }) => {
         <Tab as={React.Fragment}>
           {({ selected }) => (
             <Button
-              onClick={() => setView("easy-sharing")}
               className={clx(
                 selected && "text-gray-600 border-b-4 border-soft-red",
                 "focus:outline-none text-base sm:text-xl text-gray-800 font-satoshi font-medium py-1.5",
@@ -78,8 +75,6 @@ const Tabs = ({ setView }) => {
 };
 
 const Features = () => {
-  const [view, setView] = useState("simple-bookmark");
-
   return (
     <section className="relative xl:h-screen py-6" id="features">
       <div className="grid grid-cols-1 mx-auto max-w-7xl place-items-center place-content-center xl:h-full gap-10 px-4 xl:px-0">
@@ -93,7 +88,7 @@ const Features = () => {
           </p>
         </article>
         <article className="max-w-5xl mx-auto overflow-hidden relative">
-          <Tabs setView={setView} />
+          <Tabs />
         </article>
       </div>
     </section>
