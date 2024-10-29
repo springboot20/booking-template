@@ -58,7 +58,9 @@ const handleActive = ({ isActive }) => {
 
 const NavBar = () => {
   return (
-    <Disclosure as='nav' className='shadow-sm fixed top-0 left-0 z-20 right-0 backdrop-filter backdrop-blur-sm'>
+    <Disclosure
+      as='nav'
+      className='shadow-sm fixed top-0 bg-white/30 left-0 z-20 right-0 backdrop-filter backdrop-blur-sm'>
       {({ open }) => (
         <>
           <div className='mx-auto px-2 sm:px-6 lg:px-2 2xl:px-0 max-w-12xl'>
@@ -92,21 +94,21 @@ const NavBar = () => {
                   </svg>
                 </div>
               </div>
-              <div className='hidden sm:ml-6 sm:block'>
-                <div className='flex space-x-4 flex-shrink-0 items-center'>
-                  {navigation.map((item) => (
-                    <NavLink
-                      key={item.name}
-                      to={item.to}
-                      className={handleActive}
-                      aria-current={item.current ? 'page' : undefined}>
-                      {item.name}
-                    </NavLink>
-                  ))}
-                  <Button className='block bg-soft-red flex-shrink-0 transition-all ease hover:border-2 hover:bg-transparent hover:border-soft-red hover:text-soft-red py-3 px-12 text-2xl font-semibold text-white rounded-md outline-none'>
-                    Login
-                  </Button>
-                </div>
+              <div className='hidden sm:flex gap-5 flex-shrink-0 items-center'>
+                {navigation.map((item) => (
+                  <NavLink
+                    key={item.name}
+                    to={item.to}
+                    className={handleActive}
+                    aria-current={item.current ? 'page' : undefined}>
+                    {item.name}
+                  </NavLink>
+                ))}
+                <Button
+                  to='/'
+                  className='block bg-soft-red flex-shrink-0 transition-all ease hover:border-2 hover:bg-transparent hover:border-soft-red hover:text-soft-red py-3 px-12 text-2xl font-semibold text-white rounded-md outline-none'>
+                  Login
+                </Button>
               </div>
             </div>
           </div>
@@ -124,7 +126,9 @@ const NavBar = () => {
                   {item.name}
                 </NavLink>
               ))}
-              <Button className='bg-soft-red py-2 transition-all ease hover:border-2 hover:bg-transparent hover:border-soft-red hover:text-soft-red px-3 text-xl font-medium w-full mt-10 text-center text-white rounded-md block'>
+              <Button
+                to='/'
+                className='bg-soft-red py-2 transition-all ease hover:border-2 hover:bg-transparent hover:border-soft-red hover:text-soft-red px-3 text-xl font-medium w-full mt-10 text-center text-white rounded-md block'>
                 Login
               </Button>
               <div className='py-5 space-x-6 text-center w-full'>

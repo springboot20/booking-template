@@ -9,7 +9,7 @@ const SpeedySearching = ({ className }) => {
       <article>
         <img src={TabTwoIllustration} alt='' />
       </article>
-      <article className='max-w-2xl'>
+      <article className='max-w-3xl'>
         <h1 className='text-5xl font-bold text-gray-800 pb-10 text-center lg:text-left'> Intelligent search</h1>
         <p className='text-2xl text-grayish font-semibold pb-10 text-gray-500 text-center lg:text-left'>
           Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of

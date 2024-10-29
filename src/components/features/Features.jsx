@@ -48,7 +48,7 @@ const Features = () => {
             <div className='hidden md:block'>
               <Disclosure
                 as='nav'
-                className={`features-navigation flex flex-row space-x-10 items-center justify-center relative transition-all ease-linear ease ${
+                className={`features-navigation flex flex-row space-x-10 items-center justify-center relative transition-all ease-linear ease  ${
                   view === 'simple-bookmark'
                     ? 'md:simple-bookmark'
                     : view === 'speedy-searching'

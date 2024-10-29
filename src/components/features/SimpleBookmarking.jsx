@@ -9,7 +9,7 @@ const SimpleBookmarking = ({ className }) => {
       <article>
         <img src={TabOneIllustration} alt='' />
       </article>
-      <article className='max-w-2xl'>
+      <article className='max-w-3xl'>
         <h1 className='text-5xl font-bold text-gray-800 pb-10 text-center lg:text-left'>Bookmark in one click</h1>
         <p className='text-2xl text-grayish font-semibold pb-10 text-gray-500 md:text-center lg:text-left'>
           Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over

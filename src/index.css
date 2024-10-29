@@ -3,6 +3,83 @@
 @tailwind utilities;
 
 @layer components {
+  :root {
+    --check-size: 6em;
+    --checkmark-border-width: 3px;
+    --checkmark-width: calc(var(--check-size) / 2);
+    --checkmark-height: calc(var(--checkmark-width) / 2);
+    --checkmark-left: calc(var(--checkmark-width) / 2);
+    --checkmark-top: 50%;
+    --checkmark-color: #19b8a2;
+  }
+
+  .checkmark-wrapper {
+    @apply w-[var(--check-size)] h-[var(--check-size)] relative ml-auto mr-auto;
+  }
+
+  .checkmark-wrapper::after {
+    @apply content-[""] inset-0 w-full h-full block rounded-full z-0 absolute border-[3px] border-[#f8f8f8];
+  }
+
+  .checkmark-wrapper::before {
+    @apply z-[1] rounded-full inset-0 w-full h-full border-[3px] border-transparent absolute content-[""] block border-l-[var(--checkmark-color)];
+    -webkit-animation: circle linear forwards 0.75s;
+    animation: circle linear forwards 0.75s;
+  }
+
+  .checkmark {
+    -webkit-animation: checkmark linear both 1s;
+    animation: checkmark linear both 1s;
+    @apply opacity-0 h-[var(--checkmark-height)] border-[3px] border-transparent rotate-[-45deg] origin-top-left border-l-[var(--checkmark-color)] border-b-[var(--checkmark-color)] w-[var(--checkmark-width)] absolute block left-[var(--checkmark-left)] top-[var(--checkmark-top)] rounded-tl-md rounded-br-md;
+  }
+
+  @keyframes circle {
+    0% {
+      border-color: transparent;
+      border-left-color: var(--checkmark-color);
+    }
+    90% {
+      border-color: transparent;
+      border-left-color: var(--checkmark-color);
+      -webkit-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+    100% {
+      border-color: var(--checkmark-color);
+      -webkit-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes checkmark {
+    0% {
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+    80% {
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+    90% {
+      height: var(--checkmark-height);
+      width: 0;
+      opacity: 1;
+    }
+    100% {
+      width: var(--checkmark-width);
+      height: var(--checkmark-height);
+      opacity: 1;
+    }
+  }
+
   .extension-cards .card {
     box-shadow: 0.1rem 0.1rem 2px 0 #3333, -0.1rem -0.1rem 2px 0 #3333;
   }

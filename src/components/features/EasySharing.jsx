@@ -9,7 +9,7 @@ const EasySharing = ({ className }) => {
       <article>
         <img src={TabThreeIllustration} alt='' />
       </article>
-      <article className='max-w-2xl'>
+      <article className='max-w-3xl'>
         <h1 className='text-5xl font-bold text-gray-800 pb-10 text-center lg:text-left'> Share your bookmarks</h1>
         <p className='text-2xl text-grayish font-semibold pb-10 text-gray-500 md:text-center lg:text-left'>
           Easily share your bookmarks and collections with others. Create a shareable link that you can send at the
