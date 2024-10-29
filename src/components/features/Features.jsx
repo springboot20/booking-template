@@ -84,31 +84,16 @@ const Features = () => {
     <section className="relative xl:h-screen py-6">
       <div className="grid grid-cols-1 mx-auto max-w-7xl place-items-center place-content-center xl:h-full gap-10 px-4 xl:px-0">
         <article className="max-w-2xl mx-auto">
-          <h1 className="text-center text-3xl sm:text-5xl mb-4 font-semibold text-gray-800"> Features</h1>
+          <h1 className="text-center text-3xl sm:text-5xl mb-4 font-semibold text-very-dark-blue">
+            Features
+          </h1>
           <p className="text-center text-lg font-semibold text-gray-500 md:pb-14 lg:pb-0">
             Our aim is to make it quick and easy for you to access your favorite websites. Your
             bookmarks sync between your devices so you can access them on the go.
           </p>
         </article>
-        <article className="max-w-12xl mx-auto overflow-hidden relative">
-          <div className="max-w-5xl mx-auto">
-            <Tabs setView={setView} />
-          </div>
-          <div className="hidden mt-12 w-full">
-            {view === "simple-bookmark" ? (
-              <SimpleBookmarking
-                className={`flex flex-col lg:flex-row items-center space-y-8 lg:space-x-16 transition-al ease`}
-              />
-            ) : view === "speedy-searching" ? (
-              <SpeedySearching
-                className={`flex flex-col h-full justify-center lg:flex-row items-center gap-8`}
-              />
-            ) : (
-              <EasySharing
-                className={`flex flex-col h-full justify-center lg:flex-row items-center gap-8`}
-              />
-            )}
-          </div>
+        <article className="max-w-5xl mx-auto overflow-hidden relative">
+          <Tabs setView={setView} />
         </article>
       </div>
     </section>
