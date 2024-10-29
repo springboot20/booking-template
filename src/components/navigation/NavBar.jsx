@@ -49,10 +49,15 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ');
 };
 
+/**
+ * 
+ * @param {Boolean} param0 
+ * @returns 
+ */
 const handleActive = ({ isActive }) => {
   return classNames(
     isActive ? 'text-soft-red' : 'text-gray-800',
-    'block rounded-md px-3 py-2 text-2xl font-medium flex-shrink-0 hover:text-soft-red transition-all'
+    'block rounded-md px-3 py-2 text-lg font-medium flex-shrink-0 hover:text-soft-red transition-all hover:underline'
   );
 };
 
@@ -63,8 +68,8 @@ const NavBar = () => {
       className='shadow-sm fixed top-0 bg-white/30 left-0 z-20 right-0 backdrop-filter backdrop-blur-sm'>
       {({ open }) => (
         <>
-          <div className='mx-auto px-2 sm:px-6 lg:px-2 2xl:px-0 max-w-12xl'>
-            <div className='relative flex h-20 sm:h-24 items-center justify-between'>
+          <div className='mx-auto px-4 max-w-7xl mx-auto'>
+            <div className='relative flex h-20 sm:h-24 items-center justify-between w-full'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
                 <Disclosure.Button className='relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
@@ -106,7 +111,7 @@ const NavBar = () => {
                 ))}
                 <Button
                   to='/'
-                  className='block bg-soft-red flex-shrink-0 transition-all ease hover:border-2 hover:bg-transparent hover:border-soft-red hover:text-soft-red py-3 px-12 text-2xl font-semibold text-white rounded-md outline-none'>
+                  className='block bg-soft-red flex-shrink-0 transition-all ease hover:ring-2 hover:bg-transparent hover:ring-soft-red hover:text-soft-red py-2 px-8 text-lg font-semibold text-white rounded-md outline-none'>
                   Login
                 </Button>
               </div>
